@@ -1,0 +1,43 @@
+/* Widescreen */
+
+@media (min-width: 2000px) {
+    .booking__container {
+        right: unset;
+        bottom: 1.5%;
+    }
+    .btn__search {
+        bottom: 1.7%;
+        right: 18%;
+    }
+    .content {
+        line-height: 105px;
+        top: 30%;
+    }
+    .footer {
+        right: 0;
+        bottom: -20%;
+        width: 1512px;
+    }
+    .footer__list--contact {
+        right: 6%;
+    }
+}
+
+
+/* Moblie & Tablet */
+
+@media (max-width:1023px) {}
+
+
+/*  Tablet */
+
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+
+/* Moblie*/
+
+@media (max-width:739px) {}

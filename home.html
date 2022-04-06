@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__nav">
+                    <div class="header__logo">
+                        <div class="header__logo--group">
+                            <span class="header__logo--title">Baycungban</span>
+                            <div class="header__logo--lang">
+                                <img src="./assets/img/Vector.svg" alt="">
+                                <img src="./assets/img/Vector.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="header__menu--list">
+                            <li>
+                                <a href="">Promotion</a>
+                            </li>
+                            <li>
+                                <a href="/assets/page2.html">Flight Schedule</a>
+                            </li>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Payment Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn">Booking now</button></nav>
+            </div>
+        </header>
+        <section>
+            <div class="content">
+                <p>Hello <br> Where are <br> you <span style="color: #4D46FA;font-weight: 600;">flying</span> to ... </p>
+            </div>
+        </section>
+        <div class="grid wide">
+            <div class="booking__container">
+                <div class="booking__list">
+                    <input class="input" onClick="resetMeIfChecked()" type="radio" value="One way / Round-trip"><label for="">&ensp;One way, Round trip</label>
+                    <input class="input" type="radio" checked value="Multi-city"><label for="">&ensp;Multi city</label>
+                    <select class="option">
+                                <option value="">02 Adult, 01 children </option>
+                                <option value="">02 Adult, 02 children</option>
+                                <option value="">02 Adult</option>
+                                <option value="">01 Adult,children</option>
+                              </select>
+                    <img src="./assets/img/muiten.svg" alt="">
+                    <select class="option">
+                                <option value="">Business Class</option>
+                                <option value="">First Class</option>
+                                <option value="">Premium Class</option>
+                                <option value="">Economy Class</option>
+                              </select>
+                    <img src="./assets/img/muiten.svg" alt="">
+                </div>
+                <div class="booking__form">
+                    <div class="booking__from subbox">
+                        <span class="booking__from-text"></span>
+                        <div class="booking__from--title"><input class="booking__input--from" type="text" placeholder="Da Nang"></div>
+                        <div class="booking__from--gps">Quang Nam, Viet Nam</div>
+                    </div>
+                    <a class="booking__convert">
+                        <div class="booking__convert--arrow-l"><img src="/assets/img/arrowl.svg" alt="">
+                        </div>
+                        <div class="booking__convert--arrow-r"><img src="/assets/img/arrowr.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="booking__to subbox">
+                        <span class="booking__to-text"></span>
+                        <div class="booking__to--title"><input class="booking__input--to" type="text" placeholder="Ho Chi Minh"></div>
+                        <div class="booking__to--gps">Viet Nam</div>
+                    </div>
+                    <div class="booking__date">
+                        <div class="booking__date--dep">
+                            <span class="booking__date--title">DEPARTURE</span>
+                            <input type="date" placeholder="dd-mm-yyyy" class="block w-full pl-10 p-2.5 inputDate" id="theDate">
+                            <a class="booking__link" onclick="prevDay()">Prev</a>&ensp;
+                            <a class="booking__link" onclick="nextDay()">Next</a>
+                        </div>
+                        <div class="booking__date--return">
+                            <span class="booking__date--title">RETURN</span>
+                            <input type="date" class="block w-full pl-10 p-2.5 inputDate" id="theDate2">
+                            <a class="booking__link" onclick="prevDay2()">Prev</a>&ensp;
+                            <a class="booking__link" onclick="nextDay2()">Next</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__search">
+                    <a href="/assets/page2.html">Search Flights</a><img src="/assets/img/muiten2.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <footer class="grid wide">
+            <div class="footer">
+                <ul class="footer__list--contact">
+                    <li>
+                        <img src="/assets/img/phone.svg" alt=""> <a href="">Call us: 8 908 02 02 58</a>&ensp;&ensp;
+                    </li>
+                    <li>
+                        <img src="/assets/img/email.svg" alt=""> <a href="">Email: chucinog@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="footer__list--social">
+                    <span>Fllow us</span>
+                    <img src="/assets/img/Line.svg" alt="">
+                    <img src="/assets/img/phone.svg" alt="">
+                    <img src="/assets/img/phone.svg" alt="">
+                </ul>
+            </div>
+    </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

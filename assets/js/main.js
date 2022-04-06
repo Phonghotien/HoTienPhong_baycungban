@@ -1,10 +1,4 @@
-$('.booking__convert').mousedown('click', function() {
-    var $first = $('.booking__form').find('.subbox').first();
-    var $last = $('.booking__form').find('.subbox').last();
 
-    $('.booking__convert').after($first);
-    $('.booking__convert').before($last);
-});
 // Celender
 var date = new Date();
 var day = date.getDate();
@@ -89,4 +83,12 @@ $('input[type="radio"]').mousedown(function() {
             $(this).unbind('mouseup');
         });
     }
+});
+
+$('.booking__convert').mousedown('click', function() {
+    var $first = $('.booking__form').find('.subbox').first();
+    var $last = $('.booking__form').find('.subbox').last();
+
+    $('.booking__convert').after($first);
+    $('.booking__convert').before($last);
 });
